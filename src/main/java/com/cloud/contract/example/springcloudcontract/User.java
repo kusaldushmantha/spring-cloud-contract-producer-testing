@@ -2,7 +2,7 @@ package com.cloud.contract.example.springcloudcontract;
 
 public class User {
 
-    private int id;
+    private Integer id;
 
     private String firstName;
 
@@ -10,7 +10,7 @@ public class User {
 
     private String dateOfBirth;
 
-    public User(int id, String firstName, String lastName, String dateOfBirth) {
+    public User(Integer id, String firstName, String lastName, String dateOfBirth) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
@@ -23,11 +23,14 @@ public class User {
         this.dateOfBirth = dateOfBirth;
     }
 
-    public int getId() {
+    public User() {
+    }
+
+    public Integer getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 

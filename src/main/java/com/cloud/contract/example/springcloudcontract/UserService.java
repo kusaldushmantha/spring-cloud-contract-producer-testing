@@ -9,11 +9,13 @@ import java.util.List;
 public class UserService {
 
     private List<User> users;
+    private int counter;
 
     public UserService() {
         users = new ArrayList<>();
         users.add(new User(1,"Jack","Jonas","1994-08-07"));
         users.add(new User(2,"John","Doe","1990-01-01"));
+        this.counter = users.size();
     }
 
 
@@ -24,6 +26,14 @@ public class UserService {
             }
         }
         return null;
+    }
+
+    public User createUser(User user){
+        if(user.getId() == null){
+            user.setId(++counter);
+        }
+        users.add(user);
+        return user;
     }
 
 }
