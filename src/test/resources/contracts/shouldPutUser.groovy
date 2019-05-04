@@ -12,7 +12,7 @@ Contract.make {
         }
         body(
                 firstName: 'Pamela',
-                lastName: 'Pamela',
+                lastName: 'BlackBird',
                 dateOfBirth: '1990-01-01'
         )
     }
